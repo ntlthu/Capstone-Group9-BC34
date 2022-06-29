@@ -525,6 +525,28 @@ a.dropdown-item:hover::before {
   right: -17px;
 }
 
+/* TESTIMONIALS */
+.testimonials__content {
+  background-size: cover;
+  background-image: linear-gradient(to right,
+      rgba(247, 249, 252, 0.77),
+      rgba(247, 249, 252, 0.77)),
+    url(../images/b2.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.testimonials__content .slider-info {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
 /* RESPONSIVE */
 @media screen and (min-width: 576px) {
   .container {
