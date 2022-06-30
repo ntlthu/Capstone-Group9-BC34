@@ -330,7 +330,9 @@
               <img src="./images/women.jpg" alt="women.jpg" class="img-fluid shadow img-effect">
             </div>
           </div>
-          <div class="col-md-7 mt-5 pl-lg-5"></div>
+          <div class="col-md-7 mt-5 pl-lg-5">
+
+          </div>
         </div>
       </div>
     </main>
@@ -352,7 +354,7 @@
       <main class="pb-lg-3">
         <div class="container">
           <div class="row mt-4">
-            <div class="col-md-12 mx-auto pb-5">
+            <div class="col-md-12 mx-auto">
               <div class="owl-two owl-carousel owl-theme">
                 <div class="testimonials__item">
                   <div class="slider-info mt-lg-4 mt-3">
@@ -429,10 +431,99 @@
       </main>
     </div>
   </section>
+  <!-- own brand -->
+  <section class="ownbrand py-5">
+    <div class="container py-md-3 text-center">
+      <div class="header-section text-center mx-auto">
+        <h3>Ready to build your own brand community? </h3>
+        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus
+          turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="buttons mt-5">
+        <a href="contact.html" class="btn btn-outline-primary theme-button mr-2">Book a Demo</a>
+        <a href="contact.html" class="btn btn-primary theme-button ml-2">Get Started</a>
+      </div>
+    </div>
+  </section>
   <!-- start footer -->
   <footer>
-    <div class="footer_top"></div>
-    <div class="footer_bottom"></div>
+    <div class="footer_top pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 column">
+            <div class="row">
+              <div class="col-md-4 column">
+                <h3>Company</h3>
+                <ul class="footer__link_left">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="./about/about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 column mt-md-0 mt-4">
+                <h3>Useful Links</h3>
+                <ul class="footer__link_left">
+                  <li><a href="#url">Case Studies</a></li>
+                  <li><a href="#url">Our Branches</a></li>
+                  <li><a href="#url">Latest Media</a></li>
+                  <li><a href="./about/about.html">About Company</a></li>
+                  <li><a href="#url">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 column mt-md-0 mt-4">
+                <h3>Our Services</h3>
+                <ul class="footer__link_left">
+                  <li><a href="#url">Privacy Policy</a></li>
+                  <li><a href="#url">Our Terms</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#landing-single.html">Landing Page</a></li>
+                  <li><a href="#url">Our People</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+            <h3>Newsletter </h3>
+            <div class="footer__form">
+              <h4>Get latest updates and offers.</h4>
+              <form action="#" class="footer__form-style" method="post">
+                <input class="input-style" type="email" name="email" placeholder="Email Address" required="">
+                <button type="submit">Go</button>
+              </form>
+              <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom pt-4 pb-5 mt-4">
+      <div class="container">
+        <div class="footer_bottom-detail d-flex justify-content-between align-items-center pt-4">
+          <div class="footer_bottom-text text-lg-left text-center mt-lg-0 mt-3">
+            <p>&copy; 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a>
+            </p>
+          </div>
+          <div class="footer__bottom-icon mt-lg-0 mt-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- end footer -->
 
@@ -457,17 +548,17 @@
   <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
-      margin: 30,
+      margin: 0,
       nav: true,
       responsive: {
         0: {
           items: 1
         },
         600: {
-          items: 2
+          items: 1
         },
         1000: {
-          items: 3
+          items: 2
         }
       }
     })
