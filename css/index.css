@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-size: 16px;
   scroll-behavior: smooth;
+  background: none !important;
 }
 
 a,
@@ -523,6 +524,161 @@ a.dropdown-item:hover::before {
 
 .solution__item:hover a.btn-news span {
   right: -17px;
+}
+
+/* FAQs */
+.FAQs {
+  background: #f7f9fc;
+}
+
+.FAQs__image {
+  position: sticky;
+  top: 80px;
+}
+
+.FAQs__QA h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: var(--title-color);
+}
+
+.FAQs__QA p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.FAQs__QA ul {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.FAQs__QA ul li {
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.FAQs__QA ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 16px;
+}
+
+.FAQs__QA ul li i::before,
+.FAQs__QA ul li i::after {
+  content: "";
+  position: absolute;
+  background-color: var(--title-color);
+  width: 3px;
+  height: 9px;
+}
+
+.FAQs__QA ul li i::before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  /* -webkit-appearance: none; */
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked~p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked~i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked~i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@media screen and (max-width: 480px) {
+  .FAQs .FAQs__QA h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+/* FEATURE */
+ul.resp-tabs-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.resp-tabs-list li {
+  font-weight: 700;
+  font-size: 22px;
+  /* padding: 15px; */
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  color: #4e5b61;
+  background: #fff !important;
+  border-bottom: 3px solid rgb(193, 193, 193);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+.resp-tab-active {
+  margin-bottom: -1px !important;
+  border-bottom: 3px var(--pink) solid !important;
+  color: var(--pink) !important;
+}
+
+.resp-tab-content {
+  display: none;
+  padding: 15px;
+  border: none;
+}
+
+.resp-tabs-container.hor_1 {
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.featured .products-content {
+  padding: 40px 0;
 }
 
 /* TESTIMONIALS */
