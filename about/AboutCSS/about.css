@@ -262,8 +262,8 @@ img.img-curve {
   transition: all 0.3s ease;
   padding: 0 30px;
 }
-.bott-img .icon-holder > .service-icon {
-  line-height: 70px;
+.bott-img:hover {
+  padding: 0 30px; 
 }
 .bott-img .icon-holder {
   position: relative;
@@ -287,8 +287,37 @@ img.img-curve {
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
-  color: #2c3038;
+  color: var(--title-color); 
 }
+.bott-img .description {
+  margin: -6em auto 0;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(0); }
+  .description .agileits .w3layouts p {
+    margin: 2em;
+    color: var(--title-color); 
+  }
+
+    .bott-img .icon-holder > .service-icon {
+      line-height: 70px;
+    }
+    .bott-img:hover .icon-holder {
+      top: -40px;
+      background: var(--primary); 
+    }
+      .bott-img:hover .mission {
+        top: -80px; 
+      }
+      .bott-img:hover .description {
+        opacity: 1;
+        transform: scale(1);
+        font-size: 14px;
+        line-height: 2.2em; }
+      bott-img:hover .description a {
+        top: -60px; }
+      
+      
 .description p {
   color: #2c3038;
   font-size: 16px;
@@ -303,8 +332,9 @@ img.img-curve {
   font-weight: 700;
   color: #dc4f72;
 }
-
-
+.description a:hover {
+  text-decoration: underline;
+ }
 
 .elite-services1, .elite-services2, .elite-services3, .elite-services4 {
   background: #fff;
@@ -315,6 +345,12 @@ img.img-curve {
 .w3l-about4 .middle-section {
   max-width: 950px;
   margin: 0 auto;
+}
+.w3l-about4 .section-width p {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400; 
 }
 .w3l-about4 .history-info {
   max-width: 700px;
@@ -339,7 +375,38 @@ img.img-curve {
   -webkit-animation: ripple 1s linear infinite;
   animation: ripple 1s linear infinite;
 }
+.w3l-about4 img.video-popup-image {
+  box-shadow: var(--card-box-shadow); 
+}
+.w3l-about4 span.video-play-icon span {
+  color: var(--primary-color);
+ }
+ .w3l-about4 span.video-play-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out; 
+}
+
+
 .w3l-about4 span.fa.fa-play {
   line-height: 55px;
   color: #BA254A;
 }
+.w3l-about4 .history-info {
+  max-width: 700px;
+  margin: 0 auto; 
+}
+  .w3l-about4 .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+   }
+
+   .w3l-customers .logo-view img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: 0.3s ease;
+    padding: 1.5rem 2rem; }
+    .w3l-customers .logo-view img:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      transition: 0.3s ease; }
