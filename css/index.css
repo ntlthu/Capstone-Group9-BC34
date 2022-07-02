@@ -177,7 +177,13 @@ a.nav-link::before {
   bottom: 8px;
   transition: all 0.5s ease;
 }
-
+.dropdown-toggle::after {
+  display: none;
+}
+.header-angle-down {
+  font-size: 14px;
+  padding-left: 2px;
+}
 .dropdown-menu .dropdown-item::before {
   position: absolute;
   content: "";
