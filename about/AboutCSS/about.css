@@ -116,6 +116,14 @@
   .ml-auto {
     margin-left: auto !important;
   }
+  img, svg {
+    vertical-align: middle;
+    border-style: none;
+  }
+  img.img-curve {
+    border-radius: var(--card-curve);
+    transition: 0.3s ease-in-out;
+  }
   .header {
     background-color: #fff;
     padding: 0px;
@@ -290,14 +298,7 @@ ul {
 .w3l-about1 .cwp4-two img {
   border-radius: 5px;
 }
-img, svg {
-  vertical-align: middle;
-  border-style: none;
-}
-img.img-curve {
-  border-radius: var(--card-curve);
-  transition: 0.3s ease-in-out;
-}
+
 .w3l-about1 ul.cont-4 li i {
   color: #dc4f72;
   margin-right: 12px;
@@ -449,9 +450,7 @@ img.img-curve {
   max-width: 700px;
   margin: 0 auto;
 }
-.w3l-about4 img.video-popup-image {
-  box-shadow: var(--card-box-shadow);
-}
+
 .w3l-about4 .play-view {
   left: 0;
   right: 0;
@@ -498,7 +497,8 @@ img.img-curve {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: 0.3s ease;
-    padding: 1.5rem 2rem; }
+    padding: 1.5rem 2rem; 
+  }
     .w3l-customers .logo-view img:hover {
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
