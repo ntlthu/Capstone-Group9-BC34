@@ -146,7 +146,7 @@ a:hover {
 
 .navbar-nav .nav-item .nav-link {
   color: var(--title-color);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   position: relative;
 }
@@ -1804,7 +1804,9 @@ nav#breadcrumbs a:hover {
   max-width: 750px;
 }
 
-.blog-single .blog-single6 form.forms-29-form .text-right {
+.blog-single .blog-single6 form.forms-29-form .text-right,
+.post-navigation .post-next span.text-right,
+.post-next .posts-view-right .text-right {
   text-align: right !important;
 }
 
